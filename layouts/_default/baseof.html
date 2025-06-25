@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="keywords" content="{{ .Site.Params.keywords }}">
+    <meta name="author" content="{{ .Site.Params.author }}">
+    
+    <!-- OGP -->
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <!-- Header -->
+        <header class="site-header">
+            <div class="header-content">
+                <div class="header-brand">
+                    <a href="{{ .Site.BaseURL }}" class="site-title">
+                        <h1>{{ .Site.Params.author }}</h1>
+                        <p class="site-tagline">魚群行動計測学研究室 | Makiguchi Lab</p>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="nav-toggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        {{ range .Site.Menus.main }}
+                        <li class="nav-item">
+                            <a href="{{ .URL }}" class="nav-link {{ if $.IsMenuCurrent "main" . }}active{{ end }}">
+                                {{ .Name }}
+                            </a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="site-main">
+            {{ block "main" . }}{{ end }}
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.author }}. All rights reserved.</p>
+                    <p class="footer-updated">Last updated: {{ now.Format "2006-01-02" }}</p>
+                </div>
+                <div class="footer-links">
+                    {{ with .Site.Params.email }}
+                    <a href="mailto:{{ . }}" class="footer-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    {{ end }}
+                    {{ with .Site.Params.googleScholar }}
+                    <a href="{{ . }}" class="footer-link" target="_blank" rel="noopener" title="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    {{ end }}
+                    {{ with .Site.Params.researchGate }}
+                    <a href="{{ . }}" class="footer-link" target="_blank" rel="noopener" title="ResearchGate">
+                        <i class="fab fa-researchgate"></i>
+                    </a>
+                    {{ end }}
+                    {{ with .Site.Params.orcid }}
+                    <a href="{{ . }}" class="footer-link" target="_blank" rel="noopener" title="ORCID">
+                        <i class="fab fa-orcid"></i>
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="{{ "js/main.js" | relURL }}"></script>
+</body>
+</html>

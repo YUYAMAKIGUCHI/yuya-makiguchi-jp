@@ -1,0 +1,59 @@
+{{ define "main" }}
+<article class="presentations-page">
+    <header class="page-header">
+        <h1 class="page-title">{{ .Title }}</h1>
+        {{ with .Params.summary }}
+        <p class="page-description">{{ . }}</p>
+        {{ end }}
+    </header>
+    
+    <div class="presentations-content">
+        {{ $content := .Content }}
+        {{ $sections := split $content "---" }}
+        
+        {{ range $i, $section := $sections }}
+            {{ if gt (len (trim $section " \n")) 0 }}
+                {{ if in $section "## 20" }}
+                    {{ $lines := split $section "\n" }}
+                    {{ $year := "" }}
+                    {{ range $j, $line := $lines }}
+                        {{ if in $line "## 20" }}
+                            {{ $year = replaceRE "## " "" $line | trim " \n" }}
+                            <section class="year-section presentation-year">
+                                <h2 class="year-title">{{ $year }}</h2>
+                                <div class="presentations-list">
+                        {{ else if and (gt (len $line) 0) (not (in $line "##")) }}
+                            {{ if in $line "**" }}
+                                <div class="presentation-item">
+                                    <div class="conference-info">
+                                        {{ $line | markdownify }}
+                                    </div>
+                            {{ else if in $line "年" }}
+                                    <div class="presentation-date">{{ $line | trim " " }}</div>
+                            {{ else if and (in $line "牧口") (in $line "「") }}
+                                    <div class="presentation-details">{{ $line | markdownify }}</div>
+                                </div>
+                            {{ else if in $line "Makiguchi" }}
+                                    <div class="presentation-details international">{{ $line | markdownify }}</div>
+                                </div>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                                </div>
+                            </section>
+                {{ else if in $section "## その他" }}
+                    <section class="other-section">
+                        <div class="other-card">
+                            {{ $section | markdownify }}
+                        </div>
+                    </section>
+                {{ else if in $section "※" }}
+                    <section class="presentations-note">
+                        {{ $section | markdownify }}
+                    </section>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </div>
+</article>
+{{ end }}

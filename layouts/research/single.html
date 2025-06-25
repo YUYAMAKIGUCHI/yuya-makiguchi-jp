@@ -1,0 +1,81 @@
+{{ define "main" }}
+<article class="research-page">
+    <!-- ヒーローセクション -->
+    {{ with .Params.hero_image }}
+    <section class="research-hero" style="background-image: url('{{ . }}');">
+        <div class="hero-overlay">
+            <h1 class="hero-title">{{ $.Title }}</h1>
+            {{ with $.Params.summary }}
+            <p class="hero-subtitle">{{ . }}</p>
+            {{ end }}
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+    {{ else }}
+    <header class="page-header">
+        <h1 class="page-title">{{ .Title }}</h1>
+        {{ with .Params.summary }}
+        <p class="page-description">{{ . }}</p>
+        {{ end }}
+    </header>
+    {{ end }}
+    
+    <div class="research-container">
+        {{ $content := .Content }}
+        {{ $sections := split $content "---" }}
+        
+        {{ range $i, $section := $sections }}
+            {{ if gt (len (trim $section " \n")) 0 }}
+                {{ if (strings.Contains $section "研究の背景") }}
+                    <section class="research-section background-section">
+                        <div class="section-inner">
+                            {{ $section | markdownify }}
+                        </div>
+                    </section>
+                {{ else if (strings.Contains $section "現在の主な研究テーマ") }}
+                    <section class="research-section themes-section">
+                        <div class="section-inner">
+                            <h2>現在の主な研究テーマ</h2>
+                            {{ $content := replace $section "## 現在の主な研究テーマ" "" }}
+                            {{ $content | markdownify }}
+                        </div>
+                    </section>
+                {{ else if (strings.Contains $section "研究対象種") }}
+                    <section class="research-section species-section">
+                        <div class="section-inner">
+                            <h2>研究対象種</h2>
+                            <div class="species-grid">
+                                {{ $section | markdownify }}
+                            </div>
+                        </div>
+                    </section>
+                {{ else if (strings.Contains $section "これまでの研究成果例") }}
+                    <section class="research-section achievements-section">
+                        <div class="section-inner">
+                            {{ $section | markdownify }}
+                        </div>
+                    </section>
+                {{ else if (strings.Contains $section "研究への想い") }}
+                    <section class="research-section philosophy-section">
+                        <div class="section-inner">
+                            {{ $section | markdownify }}
+                        </div>
+                    </section>
+                {{ else if (strings.Contains $section "研究設備・フィールド") }}
+                    <section class="research-section facilities-section">
+                        <div class="section-inner">
+                            {{ $section | markdownify }}
+                        </div>
+                    </section>
+                {{ else }}
+                    <section class="research-section">
+                        <div class="section-inner">
+                            {{ $section | markdownify }}
+                        </div>
+                    </section>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </div>
+</article>
+{{ end }}

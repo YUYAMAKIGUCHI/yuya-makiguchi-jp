@@ -1,0 +1,55 @@
+{{ define "main" }}
+<article class="profile-page">
+    <header class="page-header">
+        <h1 class="page-title">{{ .Title }}</h1>
+        {{ with .Params.description }}
+        <p class="page-description">{{ . }}</p>
+        {{ end }}
+    </header>
+    
+    <div class="profile-content">
+        {{ $content := .Content }}
+        {{ $sections := split $content "---" }}
+        
+        {{ range $i, $section := $sections }}
+            {{ if gt (len (trim $section " \n")) 0 }}
+                {{ if contains $section "## 基本情報" }}
+                    <section class="profile-section basic-info">
+                        <div class="info-card">
+                            {{ $section | markdownify }}
+                        </div>
+                    </section>
+                {{ else if contains $section "## 学歴" }}
+                    <section class="profile-section education">
+                        <div class="timeline-card">
+                            {{ $section | markdownify }}
+                        </div>
+                    </section>
+                {{ else if contains $section "## 職歴" }}
+                    <section class="profile-section career">
+                        <div class="timeline-card">
+                            {{ $section | markdownify }}
+                        </div>
+                    </section>
+                {{ else if contains $section "## 所属学会" }}
+                    <section class="profile-section affiliations">
+                        <div class="info-card">
+                            {{ $section | markdownify }}
+                        </div>
+                    </section>
+                {{ else if contains $section "## 競争的資金" }}
+                    <section class="profile-section grants">
+                        <div class="info-card">
+                            {{ $section | markdownify }}
+                        </div>
+                    </section>
+                {{ else }}
+                    <section class="profile-section">
+                        {{ $section | markdownify }}
+                    </section>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </div>
+</article>
+{{ end }}

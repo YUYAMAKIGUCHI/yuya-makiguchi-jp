@@ -1,0 +1,81 @@
+baseURL = 'https://yuya-makiguchi.jp/'
+languageCode = 'ja'
+title = 'Makiguchi Lab - Marine Biology Research'
+# theme = 'makiguchi-academic'  # テーマは使用しない
+
+# 日本語設定
+defaultContentLanguage = 'ja'
+hasCJKLanguage = true
+
+# ビルド設定
+[build]
+  writeStats = true
+
+# メニュー設定
+[menu]
+  [[menu.main]]
+    name = 'HOME'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = 'PROFILE'
+    url = '/profile/'
+    weight = 2
+  [[menu.main]]
+    name = 'RESEARCH'
+    url = '/research/'
+    weight = 3
+  [[menu.main]]
+    name = 'PUBLICATIONS'
+    url = '/publications/'
+    weight = 4
+  [[menu.main]]
+    name = 'PRESENTATIONS'
+    url = '/presentations/'
+    weight = 5
+  [[menu.main]]
+    name = 'MEDIA'
+    url = '/media/'
+    weight = 6
+  [[menu.main]]
+    name = 'LINKS'
+    url = '/links/'
+    weight = 7
+
+# パラメータ設定
+[params]
+  author = '牧口 祐也'
+  description = '海洋生物学研究室 - Marine Biology Research Laboratory'
+  keywords = '海洋生物学, 魚類行動学, 繁殖生態, 配偶者選択'
+  
+  # カラーテーマ（ダークブルー×ゴールドのアカデミックな配色）
+  primaryColor = '#1e3a5f'     # ダークネイビーブルー
+  secondaryColor = '#d4a574'   # アカデミックゴールド
+  accentColor = '#4a7c7e'      # シーグリーン
+  textColor = '#333333'
+  bgColor = '#fafafa'
+  
+  # フォント設定
+  headerFont = 'Playfair Display, "Noto Serif JP", serif'
+  bodyFont = 'Inter, "Noto Sans JP", sans-serif'
+  
+  # SNS/学術プロフィール
+  googleScholar = ''
+  researchGate = ''
+  orcid = ''
+  github = ''
+  email = ''
+
+# マークダウン設定
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = 'github'
+    lineNos = false
+
+# Permalinks
+[permalinks]
+  post = '/:year/:month/:contentbasename/'
