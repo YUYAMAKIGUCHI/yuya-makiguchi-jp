@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>牧口祐也 公式ホームページ on Makiguchi Lab - Marine Biology Research</title>
+    <link>https://yuya-makiguchi.jp/</link>
+    <description>Recent content in 牧口祐也 公式ホームページ on Makiguchi Lab - Marine Biology Research</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <atom:link href="https://yuya-makiguchi.jp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>プロフィール</title>
+      <link>https://yuya-makiguchi.jp/profile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yuya-makiguchi.jp/profile/</guid>
+      <description>日本大学 生物資源科学部 海洋生物資源科学科 牧口祐也の略歴・連絡先・所属学会</description>
+    </item>
+    <item>
+      <title>メディア</title>
+      <link>https://yuya-makiguchi.jp/media/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yuya-makiguchi.jp/media/</guid>
+      <description>メディア出演・紹介記事</description>
+    </item>
+    <item>
+      <title>リンク</title>
+      <link>https://yuya-makiguchi.jp/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yuya-makiguchi.jp/links/</guid>
+      <description>関連リンク集</description>
+    </item>
+    <item>
+      <title>研究発表（2015年〜現在）</title>
+      <link>https://yuya-makiguchi.jp/presentations/2015-present/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yuya-makiguchi.jp/presentations/2015-present/</guid>
+      <description>2015年以降の国内外学会・研究会における口頭発表・ポスター発表</description>
+    </item>
+    <item>
+      <title>論文業績</title>
+      <link>https://yuya-makiguchi.jp/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yuya-makiguchi.jp/publications/</guid>
+      <description>牧口祐也の査読付き論文、著書・総説、寄稿、プロシーディング、受賞を網羅</description>
+    </item>
+  </channel>
+</rss>

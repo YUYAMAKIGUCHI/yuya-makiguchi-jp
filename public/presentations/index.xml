@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>研究発表 on Makiguchi Lab - Marine Biology Research</title>
+    <link>https://yuya-makiguchi.jp/presentations/</link>
+    <description>Recent content in 研究発表 on Makiguchi Lab - Marine Biology Research</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <atom:link href="https://yuya-makiguchi.jp/presentations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>研究発表（2015年〜現在）</title>
+      <link>https://yuya-makiguchi.jp/presentations/2015-present/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://yuya-makiguchi.jp/presentations/2015-present/</guid>
+      <description>2015年以降の国内外学会・研究会における口頭発表・ポスター発表</description>
+    </item>
+  </channel>
+</rss>
