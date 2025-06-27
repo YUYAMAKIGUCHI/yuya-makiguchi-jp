@@ -5,43 +5,41 @@ summary: "牧口祐也の査読付き論文、著書・総説、寄稿、プロ�
 
 ## 査読付き論文（全件）
 
+### 2025
+
+- **Makiguchi, Y., Abe, T.K., Ichimura, M.**  
+  [*Novel insights into sex-specific differences in heart rate variability and autonomic nervous system regulation during spawning behavior in chum salmon (Oncorhynchus keta) revealed by re-analysis of ECG logger data.*](https://doi.org/10.3389/fphys.2025.1511476) Frontiers in Physiology, 16:1511476 (2025).
+
 ### 2024
 
 - **Makiguchi, Y., Iimura, Y., Nakao, K., Nii, H., Ueda, H., Nagata, M.**  
   [*Movement patterns of Japanese crayfish revealed by long-term tracking with a passive integrated transponder tag system.*](https://doi.org/10.1007/s10750-024-05503-8) Hydrobiologia, 851, 3389–3401 (2024).
 
 - **Sekine, M., Makiguchi, Y., Sato, H., Kitagawa, T., Nagata, M.**  
-  *Changes in courtship prior to oviposition in chum salmon (Oncorhynchus keta) and male preference for female body size.* Ecology of Freshwater Fish (in press).
+  *Changes in courtship prior to oviposition in chum salmon (Oncorhynchus keta) and male preference for female body size.* Ecology of Freshwater Fish, Volume 33, Issue 2, April 2024, e12762.
 
----
+- **Takahashi, S., Sawatani, F., Ide, K., Abe, T.K., Kitagawa, T., Makiguchi, Y.**  
+  [*Mapping spatial memory in teleosts: a new Frontier in neural logging techniques.*](https://doi.org/10.3389/fphys.2024.1499058) Frontiers in Physiology, 15:1499058 (2024).
 
 ### 2023
 
 - **Makiguchi, Y., Sekine, M., Nii, H., Okamoto, S., Kitagawa, T., Nagata, M.**  
   *Metabolic rate comparison between wild and hatchery-reared masu salmon (Oncorhynchus masou).* Comparative Biochemistry and Physiology Part A: Molecular & Integrative Physiology, 282, 111449.
 
----
-
 ### 2022
 
 - **Sawayama, E., Koyanagi, M., Tanabe, N., Makiguchi, Y.**  
   *Acclimation to seawater allows activation of spermatozoa of a euryhaline fish (Oryzias latipes).* Environmental Biology of Fishes, 105, 233–243.
-
----
 
 ### 2021
 
 - **Takahashi, S., Hombe, T., Takahashi, R., Ide, K., Okamoto, S., Yoda, K., Kitagawa, T., Makiguchi, Y.**  
   *Wireless logging of extracellular neuronal activity in the telencephalon of free-swimming salmonids.* Animal Biotelemetry, 9:21.
 
----
-
 ### 2019
 
 - **Abe, T., Kitagawa, T., Makiguchi, Y., Sato, K.**  
   *Chum salmon migrating upriver accommodate to environmental temperatures through metabolic compensation.* Journal of Experimental Biology, 222: jeb198598.
-
----
 
 ### 2017
 
@@ -60,8 +58,6 @@ summary: "牧口祐也の査読付き論文、著書・総説、寄稿、プロ�
 - **Yoda, N., Makiguchi, Y.**  
   *Biotelemetry and navigation in seabirds and salmonids.* Journal of the Robotics Society of Japan, 35(2): 118–121.
 
----
-
 ### 2016
 
 - **Makiguchi, Y., Torao, M., Kojima, T., Pitcher, T.E.**  
@@ -70,35 +66,25 @@ summary: "牧口祐也の査読付き論文、著書・総説、寄稿、プロ�
 - **Makiguchi, Y., Kojima, T.**  
   *Effects of implant tag size on performance and physiology in rainbow trout.* Fisheries Research, 183: 621–626.
 
----
-
 ### 2014
 
 - **Makiguchi, Y., Aoki, Y., Kitagawa, T.**  
   *Behavioural and physiological analyses using miniature archival tags in fish.* Comparative Biochemistry and Physiology Part A: Molecular & Integrative Physiology, 175: 9–15.
-
----
 
 ### 2013
 
 - **Makiguchi, Y., Ichimura, M., Kitayama, T., Kojima, T., Kitagawa, T., Pitcher, T.E.**  
   *Context-dependent male courtship and sperm allocation in salmonids.* Behavioral Ecology and Sociobiology, 67(7): 1113–1120.
 
----
-
 ### 2012
 
 - **Makiguchi, Y., Kojima, T., Kitagawa, T.**  
   *Effects of long-term starvation on reproductive performance and behaviour in salmonids.* Journal of Fish Biology, 80(7): 2321–2327.
 
----
-
 ### 2011
 
 - **Makiguchi, Y., Kojima, T., Kitagawa, T.**  
   *Endocrine and metabolic responses during upstream migration and spawning in chum salmon (Oncorhynchus keta).* Comparative Biochemistry and Physiology Part A: Molecular & Integrative Physiology, 160(4): 487–493.
-
----
 
 ### 2010
 
@@ -108,8 +94,6 @@ summary: "牧口祐也の査読付き論文、著書・総説、寄稿、プロ�
 - **Makiguchi, Y., Kojima, T.**  
   *Effects of dummy transmitters on behaviour and survival of masu salmon juveniles.* Journal of Fish Biology, 76(2): 381–388.
 
----
-
 ### 2009
 
 - **Makiguchi, Y., Kojima, T., Kitagawa, T.**  
@@ -118,14 +102,10 @@ summary: "牧口祐也の査読付き論文、著書・総説、寄稿、プロ�
 - **Makiguchi, Y., Kojima, T., Kitagawa, T.**  
   *Physiological cost of migration and reproductive investment in chum salmon.* Journal of Fish Biology, 74(7): 1555–1568.
 
----
-
 ### 2008
 
 - **Makiguchi, Y., Kojima, T., Kitagawa, T.**  
   *EMG telemetry for estimating activity and energetics of salmon during spawning migration.* Environmental Biology of Fishes, 83(3): 351–360.
-
----
 
 ### 2007
 

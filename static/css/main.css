@@ -214,7 +214,6 @@ a:hover {
     max-width: 900px;
     margin: 0 auto 2rem;
     line-height: 1.8;
-    white-space: nowrap;
 }
 
 /* Hero Image Styles */
@@ -516,19 +515,50 @@ a:hover {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
+        z-index: 999;
     }
     
     .nav-list.active {
         max-height: 400px;
     }
     
+    .site-header {
+        position: relative;
+        z-index: 1000;
+    }
+    
+    .home-hero {
+        margin-top: 1rem;
+    }
+    
+    .nav-item {
+        border-bottom: 1px solid var(--gray-light);
+    }
+    
+    .nav-item:last-child {
+        border-bottom: none;
+    }
+    
+    .nav-link {
+        display: block;
+        padding: 1rem 0;
+    }
+    
     .home-hero h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
     }
     
     .home-intro {
-        white-space: normal;
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+    
+    .header-brand h1 {
+        font-size: 1.5rem;
+    }
+    
+    .site-tagline {
+        font-size: 0.8rem;
     }
     
     .hero-image {
