@@ -78,4 +78,4 @@ hasCJKLanguage = true
 
 # Permalinks
 [permalinks]
-  post = '/:year/:month/:contentbasename/'
+  post = '/:year/:month/:contentbasename/'"relativeURLs = true" 
