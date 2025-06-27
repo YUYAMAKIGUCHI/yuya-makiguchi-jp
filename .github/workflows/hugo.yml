@@ -32,10 +32,6 @@ jobs:
         with:
           submodules: recursive
           
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v4
-          
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -47,8 +43,7 @@ jobs:
           hugo \
             --minify \
             --gc \
-            --cleanDestinationDir \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --cleanDestinationDir
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
