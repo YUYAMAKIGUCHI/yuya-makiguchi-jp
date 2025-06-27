@@ -1,4 +1,5 @@
 baseURL = 'https://yuya-makiguchi.jp/'
+relativeURLs = true
 languageCode = 'ja'
 title = 'Makiguchi Lab - Marine Biology Research'
 # theme = 'makiguchi-academic'  # テーマは使用しない
@@ -78,4 +79,4 @@ hasCJKLanguage = true
 
 # Permalinks
 [permalinks]
-  post = '/:year/:month/:contentbasename/'"relativeURLs = true" 
+  post = '/:year/:month/:contentbasename/'
